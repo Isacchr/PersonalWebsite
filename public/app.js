@@ -9,12 +9,11 @@ function build() {
     divNavBar.className = 'p-3 bg-light border';
     app.appendChild(divNavBar);
 
-    
-
     const inputSearch = document.createElement('input');
     inputSearch.setAttribute('type', 'search');
     inputSearch.setAttribute('placeholder', 'Search');
     divNavBar.appendChild(inputSearch);
+
 
     const btnSearch = document.createElement('button');
     btnSearch.setAttribute('type', 'submit');
@@ -22,9 +21,16 @@ function build() {
     btnSearch.innerHTML = 'Search';
     divNavBar.appendChild(btnSearch);
 
+
+    const img = document.createElement('img');
+    img.setAttribute('src', 'Student_bild.JPG');
+    img.className = ' float-end w-25';
+    app.appendChild(img);
+
+
     const divOmMig = document.createElement('div');
     divOmMig.setAttribute('id', 'omMig');
-    divOmMig.className = 'border border-dark p-3';
+    divOmMig.className = 'border border-dark p-3 mt-5 w-50';
     app.appendChild(divOmMig);
 
     const titleOmMig = document.createElement('h1');
@@ -38,7 +44,7 @@ function build() {
 
     const divIntressen = document.createElement('div');
     divIntressen.setAttribute('id', 'intressen');
-    divIntressen.className = 'border border-dark p-3';
+    divIntressen.className = 'border border-dark p-3 mt-5 w-50';
     app.appendChild(divIntressen);
 
     const titleIntressen = document.createElement('h1');
@@ -53,7 +59,7 @@ function build() {
 
     const divMål = document.createElement('div');
     divMål.setAttribute('id', 'mål');
-    divMål.className = 'border border-dark p-3';
+    divMål.className = 'border border-dark p-3 mt-5 float-start w-50';
     app.appendChild(divMål);
 
     const titleMål = document.createElement('h1');
@@ -65,16 +71,8 @@ function build() {
     'I framtiden vill jag känna mig trygg att jobba med det och kunna berätta för andra om hur programering och webbutveckling fungerar.';
     divMål.appendChild(contentMål);
 
-    /* const dropDown = document.createElement('ul');
-    dropDown.setAttribute('aria-labelledby', 'navbarDropdown');
-    dropDown.className = 'dropdown-menu';
-    divNavBar.appendChild(dropDown);
+}
 
-    const dropdownItem = document.createElement('li');
-    const dropdownItemA = document.createElement('a');
-    dropdownItemA.className = 'dropdown-item';
-    dropdownItemA.innerHTML = 'Action';
-    dropDown.appendChild(dropdownItem);
-    dropdownItem.appendChild(dropdownItemA); */
+function buildNavbar() {
 
 }
