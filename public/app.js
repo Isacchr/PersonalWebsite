@@ -51,14 +51,27 @@ function buildNavbar() {
     divHomeMenu.appendChild(dropdownBtn);
     
     const titleHome = document.createElement('h1');
-    titleHome.setAttribute('name', 'homebtn');
+    titleHome.setAttribute('name', 'home');
     titleHome.innerHTML = 'Home';
-    titleHome.className = 'ms-4 w-25 float-start';
+    titleHome.className = 'ms-4 w-25 float-start  bi bi-house-fill';
     divHomeMenu.appendChild(titleHome);
+
 
     const divSearch = document.createElement('div');
     divSearch.className = 'col-4';
     divNavBar.appendChild(divSearch);
+
+
+    const githubIconHeader = document.createElement('h1');
+    githubIconHeader.className = 'float-start ms-4 bi bi-github navlink';
+    divSearch.appendChild(githubIconHeader);
+
+    const githubIconLink = document.createElement('a');
+    githubIconLink.innerHTML = 'Github';
+    githubIconLink.setAttribute('href', 'https://github.com/Isacchr');
+    githubIconLink.className = 'link-dark';
+    githubIconHeader.appendChild(githubIconLink);
+
 
     const btnSearch = document.createElement('button');
     btnSearch.setAttribute('type', 'submit');
@@ -71,6 +84,7 @@ function buildNavbar() {
     inputSearch.setAttribute('placeholder', 'Search');
     inputSearch.className = 'float-end';
     divSearch.appendChild(inputSearch);
+
 
 
     const dropdownMenu = document.createElement('ul');
